@@ -1,0 +1,600 @@
+/* Начало оформления навигации и лого*/
+header, section { 
+margin: auto;
+}
+
+header { 
+background-color:#000000;    
+width: 1400px;
+height: 70px;
+left: 0px;
+top: 0px; 
+}
+
+body { 
+margin-top:0px;
+}
+.LogoTextColor { 
+color: red;
+
+}
+.LogoHeader { 
+display:block;
+color:#FFFFFF;
+max-height:2px;
+margin-top: 0px;
+padding:15px;
+margin-left: 130px;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+align-items: baseline;
+}
+
+.setingNav { 
+display: flex;
+justify-content: flex-end;
+margin-top:-40px;
+margin-right:100px;
+color:rgba(255, 255, 255, 0.7) ;
+}
+
+.navHeader li { 
+display: inline;
+margin:15px;
+}
+
+a { 
+    text-decoration:none;
+}
+
+/* Конец оформления навигации и лого*/
+
+/* Начало оформления страницы 1*/
+
+.main { 
+max-width: 1400px; 
+}
+.onePages
+ { 
+  height: 601px;
+  width: 1400px;
+  background-image:url(./img/background-1\ 1.png);
+ }
+/* Начало оформления формы авторизации */
+.FormAvtorization {
+ position:relative;
+ margin-left:919px;
+ bottom:95px;
+ background:#FFFFFF;
+ width:370px;
+ height:370px;
+ border-radius: 8px;
+ }
+
+.FormAvtorization p {
+padding-top:20px;    
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+align-items: center;
+text-align: center;
+color: #333333;
+
+
+}
+
+.FormAvtorizationInput
+ {  position: relative;
+    margin-left:55px;
+    width: 250px;
+    height: 60px;  
+    border-top:none;
+    border-left: none ;
+    border-right: none; 
+
+ }
+
+
+.FormAvtorizationInputButt {
+position:relative;         
+width: 370px;
+height: 54px;
+top: 60px;
+background: #EC7979;
+border-radius: 0px 0px 8px 8px;
+border-color:#EC7979;} 
+/* конец  оформления формы авторизации */
+
+/* Начало  оформления иных элементов страницы 1 */
+
+.ModernText {
+position:absolute;
+margin-left: 130px;
+margin-top: -20px;
+font-size: 36px;
+max-width: 544px;
+height:99px;
+align-self:center;
+color:#FFFFFF ;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+}
+
+.lineTextModern { 
+position: absolute;
+width: 64px;
+height: 0px;
+margin-left: 130px;
+top: 381px;
+
+
+border: 1px solid #FFFFFF;
+     
+}
+
+.LoremText { 
+position: absolute;
+margin:0px;
+width: 250px;
+font-size: 15px;
+margin-top:200px;
+color:#FFFFFF;
+margin-left:130px;
+}
+
+.LogoHeader2
+{
+margin-top: 90px;
+font-size: 60px;
+margin-left: 130px;     
+display: inline-block;
+flex-wrap: nowrap;
+max-height:50px;
+}
+
+.DownloadPagesOne
+ { 
+  position:relative;
+  top:370px;
+  right:150px;
+  background-color:rgba(255, 255, 255, 0);
+  color: aliceblue;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  width: 135px;
+  height: 42px;
+ }
+/* Начало  оформления ссылок на социальные сети Страница 1 */
+
+.OnePagesSoc
+ {
+width: 1400px;
+height: 110px;
+background: #F8EFEF;
+ }
+
+.OnePagesSoc h2 { 
+position:absolute;
+margin-left:130px;
+width: 125px;
+height: 27px; 
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+color: #333333;   
+}
+.OnePagesSoc h3 { 
+position: absolute;
+margin-left:130px;
+margin-top:60px;
+width: 365px;
+height: 38px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #86878B;
+}
+
+.OnePagesSoc img { 
+position: absolute;
+margin-left:650px;
+margin-top:35px;
+width: 684px;
+height: 42px;
+}
+
+/* коненц оформления ссылок на социальные сети Страница 1 */
+.TwoPages 
+{
+display:flex;
+justify-content:space-between;
+width:1400px;
+height:601px;   
+background-color:#FFFFFF;
+}
+.frameTwoPages {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+width:calc(30%);
+height: 601px;
+justify-content:flex-start;
+margin-top:150px;
+width: 112px;
+margin-left: 70px;
+}
+.frameTwoPages li { 
+background-color:#EC7979;
+color: #FFFFFF;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+border-radius: 4px;
+width: 112px;
+height: 110px;
+margin: 2px;
+}
+
+.frameTwoPages li:nth-child(2) {
+background-color:#333333;
+}
+
+.frameTwoPages li:nth-child(3) {
+    background-color:#333333;
+    }
+
+
+.infoTwoPages { 
+flex-direction: column;
+flex-wrap: nowrap;
+width: calc(40%);
+height: 601px;
+justify-content:center;
+margin-top:150px;
+margin-left:80px;
+}
+
+.infoTwoPages h3 { 
+margin-top:0px;    
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #000000;    
+}
+
+.infoTwoPages p { 
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+margin-top:55px;
+text-transform: uppercase;
+color: #86878B;
+}
+
+.imgTwoPages { 
+display: flex;
+height: 253px;
+width: 470px;
+justify-content:center;
+margin-top:150px;
+}
+
+.TwoPagesButton { 
+color: #FFFFFF;
+background: #EC7979;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+width: 135px;
+height: 42px;
+margin-top:40px;
+
+}
+
+/* Начало  оформления страницы 3 */
+
+.ThreePages
+{
+    background: #FFFFFF;
+    width: 1400px;
+    height: 595px;    
+}
+/* Начало  оформления секции с текстом на странице 3 */
+.ThreePagesTextSection h2 { 
+position: relative;
+left:550px;
+margin:0px;
+top:10px;
+width: 409px;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #212121;  
+}
+
+.ThreePagesTextSection hr { 
+background-color:#EC7979;
+position: relative;
+top:40px;
+left: 45px;
+width: 64px;
+height: 2px;
+
+}
+
+.ThreePagesTextSection h3 { 
+position: relative;
+width: 350px;
+height: 60px;
+left:590px;
+top: 70px;  
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #86878B;
+}
+
+/* конец  оформления секции с текстом на странице 3 */
+/* Начало  оформления секции с картинками на странице 3 */
+
+.ThreePagesCardSection { 
+display: flex;
+padding-left: 200px;
+padding-right: 200px;
+}
+
+.CardSectionSetting {
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+margin-top:100px;
+} 
+
+.CardSectionSetting h3 { 
+padding:15px;
+width: 189px;
+height: 29px;
+margin-left: 60px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+color: #333333;
+
+}
+.CardSectionSetting h4 { 
+width: 350px;
+height: 60px;
+top: 145px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+color: #000000;
+}
+
+.CardSectionSetting img:nth-child(1) { 
+ position: relative;
+ top: 48px;
+ padding:0px;
+
+}
+/* Конец  оформления секции с картинками на странице 3 */
+/* Конец  оформления страницы 3 */
+
+/* Начало оформления страницы 4 */
+/* оформление верхней части страницы 4 */
+.FourPages { 
+width: 1400px;
+height: 800px;
+background: #F5F5F5;   
+}
+
+.FourPagesTextSection h2 { 
+position: relative;
+left:530px;
+margin:0px;
+top: 100px;
+width: 409px;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+text-transform: uppercase;
+color: #212121;
+}
+
+.FourPagesTextSection hr{ 
+background-color:#EC7979;
+position: relative;
+top:130px;
+left: 30px;
+width: 64px;
+height: 2px;
+border: 1px solid #E72424;
+}
+
+.FourPagesTextSection h3 { 
+position: relative;
+width: 363px;
+height: 60px;
+left:560px;
+top: 160px;  
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #86878B;
+}
+/* конец оформления верхней части страницы 4 */
+/* начало оформления нижней части страницы 4 */
+
+.FourPagesBlockSection { 
+display: flex;
+align-items: center;
+justify-content:center;
+flex-direction: row;
+align-items:center;
+justify-content: center;
+margin-top:190px;
+}
+
+.BlockOneSectionPage3 li { 
+width: 340px;
+height: 20px;
+margin: 1px;
+font-size: 14px;
+line-height: 19px;
+padding-top: 5px;
+padding-bottom: 5px;
+background: #ffffff;
+color: #86878B;
+border-radius: 1px 1px 1px 1px;
+border-color:#ffffff;
+align-items: center;
+text-align: center;
+border: 1px solid #ffffff;
+list-style: none;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+} 
+
+.BlockOneSectionPage3 ul li:nth-child(1)
+ { 
+display:flex;
+position:relative;
+margin:auto;
+height: 50px;
+justify-content: center;
+background: #333333;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+}
+
+.BlockOneSectionPage3 ul li:nth-child(2) {
+display:flex; 
+justify-content: center;
+padding-top:0px ;
+height: 100px;
+padding-bottom: 0px;
+background: #333333;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 41px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+ .BlockOneSectionPage3 ul li:nth-child(3) {
+display:flex; 
+justify-content: center;
+padding-top:0px ;
+height: 50px;
+padding-bottom: 0px;
+background: #333333;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+color: rgba(255, 255, 255, 0.5);;
+    }
+    /* конец оформления нижней части страницы 4 */
+    /* начало оформления нижней части страницы 5 */
+
+.FivePages { 
+background-color: #FFFFFF;
+width: 1400px;
+height: 600px;
+}
+
+.FivePagesTextSection h2{ 
+position: relative;
+left:380px;
+margin:0px;
+margin-top:180px;
+width: 668px;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+text-transform: uppercase;
+color: #212121;
+}
+
+.FivePagesTextSection hr{ 
+background-color:#EC7979;
+position: relative;
+top:30px;
+left: 8px;
+width: 64px;
+height: 2px;
+border: 1px solid #E72424;
+}
+
+.FivePagesTextSection h3{
+position: relative;
+width: 363px;
+height: 19px;
+left:560px;
+top: 110px;  
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #86878B;
+}
+
+.fivePagesManagerMessage
+{display: flex; 
+    
+}

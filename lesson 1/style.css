@@ -2,6 +2,10 @@
 header, section { 
 margin: auto;
 }
+a {
+color:white;
+text-decoration: none;
+}
 
 header { 
 background-color:#000000;    
@@ -20,19 +24,21 @@ color: red;
 }
 .LogoHeader { 
 display:block;
-color:#FFFFFF;
+color:#ffffff;
 max-height:2px;
 margin-top: 0px;
 padding:15px;
 margin-left: 130px;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
+font-family: "Raleway","Arial", sans-serif;
 font-size: 30px;
 line-height: 35px;
 align-items: baseline;
 }
+.LogoHeader a:hover {
+transition:2s;
+background-color: #0767948a;
 
+}
 .setingNav { 
 display: flex;
 justify-content: flex-end;
@@ -46,38 +52,49 @@ display: inline;
 margin:15px;
 }
 
-a { 
-    text-decoration:none;
+.navHeader li:hover {
+background-color:#0767948a; 
+   
 }
+
+
+
 
 /* Конец оформления навигации и лого*/
 
 /* Начало оформления страницы 1*/
 
 .main { 
-max-width: 1400px; 
+width: 1400px; 
+height: 585px;
 }
 .onePages
  { 
   height: 601px;
-  width: 1400px;
-  background-image:url(./img/background-1\ 1.png);
- }
+  width: 1400px; 
+  background: rgba(0, 0, 0, 0.45) url(./img/back1.png);
+  background-blend-mode: multiply, normal; }
+
+
+
+
+
+
 /* Начало оформления формы авторизации */
 .FormAvtorization {
  position:relative;
  margin-left:919px;
- bottom:95px;
+ bottom:425px;
  background:#FFFFFF;
  width:370px;
  height:370px;
  border-radius: 8px;
  }
 
+
 .FormAvtorization p {
 padding-top:20px;    
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 font-size: 20px;
 line-height: 27px;
@@ -107,13 +124,24 @@ height: 54px;
 top: 60px;
 background: #EC7979;
 border-radius: 0px 0px 8px 8px;
-border-color:#EC7979;} 
+border-color:#EC7979;
+color: #ffffff;
+cursor:pointer;} 
+
+.FormAvtorizationInputButt:hover {
+    background:#13e00bf5;
+    border: 1px solid #13e00bf5;
+    border-radius: 10px;
+    transition: 2s;
+    color: rgb(255, 255, 255);
+    }
+
 /* конец  оформления формы авторизации */
 
 /* Начало  оформления иных элементов страницы 1 */
 
 .ModernText {
-position:absolute;
+position:relative;
 margin-left: 130px;
 margin-top: -20px;
 font-size: 36px;
@@ -121,34 +149,37 @@ max-width: 544px;
 height:99px;
 align-self:center;
 color:#FFFFFF ;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
+font-family: "Raleway","Arial", sans-serif;
 font-size: 36px;
 line-height: 42px;
-
 }
 
-.lineTextModern { 
+.ModernText::before {
+content: "";
 position: absolute;
+top:145px;
+left: 2px;
 width: 64px;
-height: 0px;
-margin-left: 130px;
-top: 381px;
-
-
-border: 1px solid #FFFFFF;
-     
+height: 2px;
+background-color: #ffffff;
+right: 490px;
+margin: auto;
 }
+
 
 .LoremText { 
-position: absolute;
+position: relative;
 margin:0px;
+bottom: 120px;
 width: 250px;
 font-size: 15px;
 margin-top:200px;
-color:#FFFFFF;
+color:rgba(255, 255, 255, 0.8);;
 margin-left:130px;
+font-family: "Raleway","Arial", sans-serif;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
 }
 
 .LogoHeader2
@@ -159,19 +190,33 @@ margin-left: 130px;
 display: inline-block;
 flex-wrap: nowrap;
 max-height:50px;
+color: #ffffff;
 }
 
 .DownloadPagesOne
  { 
   position:relative;
-  top:370px;
-  right:150px;
+  bottom:20px;
+  left: 145px;
   background-color:rgba(255, 255, 255, 0);
   color: aliceblue;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   width: 135px;
   height: 42px;
+ }
+
+
+
+ .DownloadPagesOne:hover
+ { background-color:rgb(33, 235, 218);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(33, 235, 218);
+  border-radius:10px;
+  cursor: pointer;
+  transform:scale(1.2);
+  transition:1s;
+  
  }
 /* Начало  оформления ссылок на социальные сети Страница 1 */
 
@@ -182,36 +227,35 @@ height: 110px;
 background: #F8EFEF;
  }
 
-.OnePagesSoc h2 { 
-position:absolute;
-margin-left:130px;
+.OnePagesSoc h4 { 
+position:relative;
+margin: 0px;
+left:130px;
+top:20px;
 width: 125px;
 height: 27px; 
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 font-size: 20px;
 line-height: 27px;
 color: #333333;   
 }
-.OnePagesSoc h3 { 
-position: absolute;
+.OnePagesSoc p { 
+position: relative;
 margin-left:130px;
-margin-top:60px;
+top:15px;
 width: 365px;
 height: 38px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 19px;
 color: #86878B;
 }
 
-.OnePagesSoc img { 
-position: absolute;
+.OnePagesSoc img {
+position: relative; 
 margin-left:650px;
-margin-top:35px;
+bottom: 60px;
 width: 684px;
 height: 42px;
 }
@@ -229,7 +273,6 @@ background-color:#FFFFFF;
 display: flex;
 flex-direction: column;
 flex-wrap: nowrap;
-width:calc(30%);
 height: 601px;
 justify-content:flex-start;
 margin-top:150px;
@@ -257,6 +300,13 @@ background-color:#333333;
     background-color:#333333;
     }
 
+.frameTwoPages li:hover { 
+background-color: aqua;
+
+transform: scale(1.2) rotate(360deg);
+transition: 1s;
+cursor: pointer;
+}    
 
 .infoTwoPages { 
 flex-direction: column;
@@ -268,10 +318,9 @@ margin-top:150px;
 margin-left:80px;
 }
 
-.infoTwoPages h3 { 
+.infoTwoPages h2 { 
 margin-top:0px;    
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 font-size: 20px;
 line-height: 27px;
@@ -283,9 +332,7 @@ color: #000000;
 }
 
 .infoTwoPages p { 
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 19px;
 display: flex;
@@ -303,6 +350,11 @@ justify-content:center;
 margin-top:150px;
 }
 
+.imgTwoPages:hover {
+transform: scale(1.2);
+transition: 2s; 
+}
+
 .TwoPagesButton { 
 color: #FFFFFF;
 background: #EC7979;
@@ -313,6 +365,15 @@ height: 42px;
 margin-top:40px;
 
 }
+
+.TwoPagesButton:hover { 
+cursor: pointer;
+background-color: cadetblue;
+transform: scale(1.2);
+transition: 2s;
+}
+
+
 
 /* Начало  оформления страницы 3 */
 
@@ -325,38 +386,35 @@ margin-top:40px;
 /* Начало  оформления секции с текстом на странице 3 */
 .ThreePagesTextSection h2 { 
 position: relative;
-left:550px;
+left:510px;
 margin:0px;
 top:10px;
-width: 409px;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
+width: 429px;
+font-family: "Raleway","Arial", sans-serif;
 font-size: 36px;
 line-height: 42px;
-
 color: #212121;  
 }
 
-.ThreePagesTextSection hr { 
-background-color:#EC7979;
-position: relative;
-top:40px;
-left: 45px;
+.ThreePagesTextSection h2::before {
+content: "";
+position: absolute;
+top:85px;
+left: 0px;
 width: 64px;
 height: 2px;
-
+background-color: #EC7979;
+right: 10px;
+margin: auto;
 }
 
-.ThreePagesTextSection h3 { 
+
+.ThreePagesTextSection p { 
 position: relative;
-width: 350px;
-height: 60px;
-left:590px;
+width: 390px;
+left:540px;
 top: 70px;  
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 19px;
 color: #86878B;
@@ -383,24 +441,19 @@ margin-top:100px;
 
 .CardSectionSetting h3 { 
 padding:15px;
-width: 189px;
 height: 29px;
-margin-left: 60px;
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 font-size: 20px;
 line-height: 27px;
 color: #333333;
 
 }
-.CardSectionSetting h4 { 
+.CardSectionSetting p { 
 width: 350px;
 height: 60px;
 top: 145px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 19px;
 text-align: center;
@@ -408,9 +461,15 @@ color: #000000;
 }
 
 .CardSectionSetting img:nth-child(1) { 
- position: relative;
- top: 48px;
- padding:0px;
+height: 37px;
+width: 37px;
+border: 1px solid #E72424;
+border-radius:100%;
+object-fit:contain;
+box-sizing:content-box;
+padding: 15px;
+list-style: none;
+
 
 }
 /* Конец  оформления секции с картинками на странице 3 */
@@ -430,35 +489,33 @@ left:530px;
 margin:0px;
 top: 100px;
 width: 409px;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
+font-family: "Raleway","Arial", sans-serif;  
 font-size: 36px;
 line-height: 42px;
 text-align: center;
 text-transform: uppercase;
 color: #212121;
 }
-
-.FourPagesTextSection hr{ 
-background-color:#EC7979;
-position: relative;
-top:130px;
-left: 30px;
+.FourPagesTextSection h2::before {
+content: "";
+position: absolute;
+top:90px;
+left: 0px;
 width: 64px;
 height: 2px;
-border: 1px solid #E72424;
-}
+background-color: #EC7979;
+right: 10px;
+margin: auto;}
 
-.FourPagesTextSection h3 { 
+
+
+.FourPagesTextSection p { 
 position: relative;
-width: 363px;
+width: 500px;
 height: 60px;
-left:560px;
+left:530px;
 top: 160px;  
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 16px;
 line-height: 19px;
 color: #86878B;
@@ -471,7 +528,6 @@ display: flex;
 align-items: center;
 justify-content:center;
 flex-direction: row;
-align-items:center;
 justify-content: center;
 margin-top:190px;
 }
@@ -492,9 +548,7 @@ align-items: center;
 text-align: center;
 border: 1px solid #ffffff;
 list-style: none;
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+font-family:"Open Sans","Helvetica Neue", Helvetica, sans-serif;
 } 
 
 .BlockOneSectionPage3 ul li:nth-child(1)
@@ -505,8 +559,7 @@ margin:auto;
 height: 50px;
 justify-content: center;
 background: #333333;
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-weight: bold;
 font-size: 20px;
 line-height: 27px;
@@ -520,8 +573,7 @@ padding-top:0px ;
 height: 100px;
 padding-bottom: 0px;
 background: #333333;
-font-family: Raleway;
-font-style: normal;
+font-family: "Raleway","Arial", sans-serif;
 font-weight: bold;
 font-size: 35px;
 line-height: 41px;
@@ -537,64 +589,354 @@ padding-top:0px ;
 height: 50px;
 padding-bottom: 0px;
 background: #333333;
-font-family: Open Sans;
-font-style: normal;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-weight: 600;
 font-size: 14px;
 line-height: 19px;
 text-align: center;
-color: rgba(255, 255, 255, 0.5);;
+color: rgba(255, 255, 255, 0.5);}
+
+.FourPagesBlockSection .BlockOneSectionPage3:nth-child(2){
+    padding-bottom: 50px;
+   
+
     }
+
     /* конец оформления нижней части страницы 4 */
     /* начало оформления нижней части страницы 5 */
 
-.FivePages { 
-background-color: #FFFFFF;
+    .FivePages { 
+        background-color: #FFFFFF;
+        width: 1400px;
+        height: 600px;
+        }
+        
+        .FivePagesTextSection h2{ 
+        position: relative;
+        left:380px;
+        margin:0px;
+        margin-top:180px;
+        width: 668px;
+        font-family: "Raleway","Arial", sans-serif;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #212121;
+        }
+        
+        .FivePagesTextSection h2::before {
+        content: "";
+        position: absolute;
+        top:90px;
+        left: 0px;
+        width: 64px;
+        height: 2px;
+        background-color: #EC7979;
+        right: 10px;
+        margin: auto;
+        }
+        
+        
+        .FivePagesTextSection h3{
+        position: relative;
+        width: 393px;
+        height: 19px;
+        left:530px;
+        top: 110px;  
+        font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        color: #86878B;
+        }
+        
+        .fivePagesManagerMessage
+        {display: flex;
+        justify-content: center;
+        margin-top: 200px;
+     
+           
+        }
+        
+        .MessageJeremyPages5 {
+         margin: 0px 40px 0px 40px;
+            
+        
+               
+        }
+        
+        .MessageJeremyPages5 p {
+        display: flex;
+        width: 298px;
+        height: 110px;
+        left: 963px;
+        top: 278px;
+        padding: 10px;
+        background: #E2E2E2;
+        border-radius: 7px;
+        font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        color: #86878B;   
+        }
+    
+
+
+         .employer { 
+        display: flex;
+         }
+
+         .employer img { 
+            width: 70px;
+            height: 70px;
+            padding: 15px 20px 0px 35px;
+
+         }
+
+         .employer-name {
+            display: flex;
+            flex-direction: column;   
+            padding: 20px 0px 0px 30px ;
+            align-items: flex-end;
+         }
+
+         .employer-name span:nth-child(1) { 
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center; 
+            padding-bottom: 15px; 
+        
+         }
+
+         
+/* Начало стилизации 6 страницы */
+
+.BlockInfoSixPages
+{ 
 width: 1400px;
-height: 600px;
+height: 326px;  
+background: rgba(0, 0, 0, 0.45) url(./img/back2.png);
+background-blend-mode: multiply, normal;
 }
 
-.FivePagesTextSection h2{ 
+.BlockInfoSixPages h2 { 
+    position: relative;
+    margin: auto;
+    top: 58px;
+    width: 448px;
+    height: 42px;
+    color: #FFFFFF;
+    font-family: "Raleway","Arial", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;    
+}
+
+.BlockInfoSixPages h2::before {
+    content: "";
+    position: absolute;
+    top:90px;
+    left: 0px;
+    width: 64px;
+    height: 2px;
+    background-color: #ffffff;
+    right: 10px;
+    margin: auto;
+}
+
+.BlockInfoSixPages h3 {
+    position: relative;
+    margin: auto;
+    top:170px; 
+    width: 779px;
+    height: 19px;    
+    font-family: "Raleway","Arial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8); 
+}
+.BlockInfoSixPages button {
+    position: relative;
+    left:632px;
+    top:200px;
+    width: 135px;
+    height: 42px; 
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #FFFFFF;
+  
+}
+.BlockInfoSixPages button:hover {
+background-color:darkcyan;
+color: aliceblue;
+border-radius:40px 10px solid #0767948a;
+transform:scale(1.2);
+transition: 2s;
+cursor: pointer;
+
+}
+
+.BlockContactSixPages { 
+width: 1400px;
+height: 700px;
+}
+
+.ContactUsTextSixpages h4{ 
 position: relative;
-left:380px;
-margin:0px;
-margin-top:180px;
-width: 668px;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
+margin: 0px;
+width: 409px;
+height: 42px;
+left: 490px;
+top: 80px;
+font-family: "Raleway","Arial", sans-serif;
+font-size:36px;
+line-height:42px;
 text-align: center;
-text-transform: uppercase;
 color: #212121;
 }
 
-.FivePagesTextSection hr{ 
-background-color:#EC7979;
-position: relative;
-top:30px;
-left: 8px;
+.ContactUsTextSixpages h4::before {
+content: "";
+position:absolute;
+margin: auto;
+top:60px;
+left: 0px;
 width: 64px;
 height: 2px;
-border: 1px solid #E72424;
+right: 8px;
+background-color: #EC7979;
+
 }
 
-.FivePagesTextSection h3{
-position: relative;
-width: 363px;
+.ContactUsTextSixpages p { 
+position:relative;
+width: 365px;
 height: 19px;
-left:560px;
-top: 110px;  
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
+left: 520px;
+top: 112px;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 font-size: 14px;
 line-height: 19px;
-color: #86878B;
+color: #86878B;   
 }
 
-.fivePagesManagerMessage
-{display: flex; 
-    
+/* Начало стилизации формы отправки сообщения */
+
+
+.ContactImageFormSixPages {
+position: relative;
+margin-left:55px;
+width: 250px;
+height: 60px;  
+border-top:none;
+border-left: none ;
+border-right: none; 
+}
+
+.FormInformInputNameSixPage { 
+position: relative;
+margin-left:55px;
+width: 478.01px;
+height: 90px;  
+top:130px;
+border-top:none;
+border-left: none ;
+border-right: none; 
+}
+
+.FormInformInputEmailSixPage { 
+position: relative;
+margin-left:55px;
+width: 478.01px;
+height: 100px;  
+top:150px;
+border-top:none;
+border-left: none ;
+border-right: none;    
+}
+
+.FormInformInputPswSixPage { 
+position: relative;
+margin-left:55px;
+width: 478.01px;
+height: 100px;  
+top:150px;
+border-top:none;
+border-left: none ;
+border-right: none;    
+}
+
+.FormInformInputMessSixPage {
+position: relative;
+margin: 0px;
+margin-left:55px;
+width: 478.01px;
+margin-top: 50px;
+bottom: 180px;
+height: 280px;  
+left: 700px;
+border-top:none;
+border-left: none ;
+border-right: none; 
+resize: none; 
+}
+.FormAvtorizationInputBut {
+position: relative;
+bottom:130px;
+width: 166px;
+height: 42px;
+left: 550px;
+background: #EC7979;
+border: 1px solid #ffffff;
+box-sizing: border-box;
+font-family: "Open Sans","Helvetica Neue", Helvetica, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.FormAvtorizationInputBut:hover { 
+background-color: rgb(0, 139, 7);
+border-radius: 10px;
+transition: 2s;
+transform: scale(1.2);
+cursor: pointer;
+
+}
+/* Начало стилизации Footer*/
+footer {
+width: 1400px;
+height: 101px;
+background: #000000;
+}
+
+footer img { 
+position: relative;
+left:541px;
+top:31px;
+width: 315px;
+height: 23px;
+}
+
+footer h2 { 
+position: relative;
+width: 130px;
+height: 15px;
+left: 635px;
+top: 40px;
+margin: 0px;
+font-family:"Open Sans","Helvetica Neue", Helvetica, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: rgba(255, 255, 255, 0.5);
 }

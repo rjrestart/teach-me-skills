@@ -1,0 +1,46 @@
+.Statistics__header{ 
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+padding:20px;
+}
+
+.Statistics__header img { 
+   
+    object-fit: contain;
+    box-sizing: content-box;
+}
+
+.header__search--setting { 
+    display:flex; 
+    align-items: center;
+
+}
+
+.header__search--setting label .header__search{ 
+ margin:0px 0px 0px 30px ;
+ width: 153px;
+ height: 32px;
+ background: #FDFDFF;
+ border: 1px solid #EBEBEB;
+ box-sizing: border-box;
+ border-radius: 8px;
+}
+
+.header__search--setting img:nth-child(4) { 
+    margin:0px 0px 0px 15px ;
+   }
+
+.header__people { 
+    display: flex;
+    align-content: center;
+}
+.header__people a { 
+    align-self:center;
+}
+.header__people span { 
+    align-self:center;
+    margin-right:15px;
+}
+   
+   

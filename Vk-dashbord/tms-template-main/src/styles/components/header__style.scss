@@ -1,0 +1,52 @@
+.Statistics__header{ 
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+padding:20px;
+}
+
+.Statistics__header img { 
+   
+    object-fit: contain;
+    box-sizing: content-box;
+}
+
+.header__search--setting { 
+    display:flex; 
+    align-items: center;
+
+}
+
+.header__search--setting img:nth-child(2) { 
+ transform: translate3d(51px, 0px, 0px);
+}
+
+.header__search--setting label .header__search{ 
+ margin:0px 0px 0px 30px ;
+ width: 153px;
+ height: 32px;
+ background: $color_white;
+ border: 1px solid $color_white;
+ box-sizing: border-box;
+ border-radius: 8px;
+ padding-left: 25px;
+}
+
+.header__search--setting img:nth-child(4) { 
+    margin:0px 0px 0px 15px ;
+   }
+
+.header__people { 
+    display: flex;
+    align-content: center;
+}
+.header__people a { 
+    align-self:center;
+    padding: 10px;
+}
+.header__people span { 
+    align-self:center;
+    margin-right:15px;
+}
+   
+   

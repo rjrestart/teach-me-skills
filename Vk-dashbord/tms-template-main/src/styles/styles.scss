@@ -1,0 +1,19 @@
+// Utils
+
+@import './utils/variables.scss';
+@import './utils/mixins.scss';
+@import './utils/fonts.scss';
+
+
+// Components
+
+@import './components/global.scss';
+@import './components/body__setting.scss';
+@import './components/container__setting-grid';
+@import './components/elements__style.scss';
+@import './components/aside__style.scss';
+@import './components/header__style.scss';
+@import './components/people__mini--card.scss';
+@import './components/middle_of_page_setting.scss';
+@import './components/page_footer_setting.scss';
+@import './components/Responsive.scss'; 

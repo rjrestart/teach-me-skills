@@ -1,0 +1,109 @@
+@media  only screen and (max-width:383px) {
+/*adaptive Iphone X */
+    .container__padding-setting { 
+  
+    width: 509px;
+    padding: 15px;} 
+     
+    .container__setting-grid { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin:0px;
+        width: 510px;
+        background: #183ba65e;
+    }
+
+    .Statistics__header { 
+        grid-area:header;
+        display: flex;
+        width: 375px;
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction:row-reverse;
+    }
+
+    .aside_sitebar { 
+    
+     position:sticky;
+     width:509px; 
+     height: 50px;
+     display: flex;
+     border-radius: 20px 20px 20px 20px;
+     bottom: 10px;
+    }
+
+    .aside__nav--logo { 
+        margin:0px;
+        align-self: center;
+        padding: 5px;
+    }
+    .aside_sitebar a:nth-child(9) { 
+        margin:0px;
+        align-self: center;
+    }
+
+    .section__articles { 
+    grid-area:articles;
+    display: flex;
+    flex-direction: column;
+    }
+    .section__articles1 { 
+        width: auto;
+        height: auto;
+        margin:0px;
+
+    }
+
+    .section__audience { 
+        display: flex;
+        flex-direction: column;
+        grid-gap: 35px;
+
+    }
+
+    .section__audience-s{ 
+        width: 445px;
+    }
+    .section__audience-s img { 
+        width: 400px;
+
+    }
+
+    .section__reach { 
+        width: 445px;
+        padding: 10px 16% 10px 27%;
+    }
+    .section__gendergeo { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        grid-gap:30px;
+    }
+
+    .section__gender { 
+        display: flex;
+        flex-direction: column;
+        align-self:center;
+        width: 450px;
+        padding: 20px;
+    }
+    .section__gender img{
+        width: 400px;
+    }
+
+    .section__geo { 
+        margin:0px;
+        width: 450px;
+
+    }
+    .body { 
+        margin:2px;
+    
+    } 
+    main { 
+        padding:0px;
+        margin: 0px;
+
+
+    }}
